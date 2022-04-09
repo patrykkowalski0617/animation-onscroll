@@ -1,4 +1,4 @@
-Example of usage:
+## Example of usage:
 
     animationOnScroll({
         elementsSelector: ".element",       // css selector
@@ -7,3 +7,7 @@ Example of usage:
         startPointInfo: true,               // optional. Show helpers on screen
         animOnload: false,                  // start script immediately, don't wait for scroll event
     });
+
+## Deploy on Netlify:
+
+https://animation-onscroll-patrykkowalski0617.netlify.app/
