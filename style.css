@@ -1,0 +1,48 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 400px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .element {
+  width: calc(50% - 30px);
+  min-width: 600px;
+  height: 50vh;
+  margin: 15px auto;
+  background-color: #66666600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  bottom: -200px;
+  border: #eee solid 1px;
+}
+
+.container .element::before {
+  content: "waiting for animation";
+  color: #ddd;
+}
+
+.container .element.anim1 {
+  bottom: 0;
+  background-color: #666666ff;
+}
+
+.container .element.anim1::before {
+  content: "";
+}
+
+.container .element.anim2 {
+  border-radius: 50px;
+}
+/*# sourceMappingURL=style.css.map */

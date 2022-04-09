@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="margin: 0">
+    <div class="container"></div>
+    <script>
+      const container = document.querySelector(".container");
+      for (let i = 0; i < 30; i++) {
+        container.insertAdjacentHTML(
+          "afterbegin",
+          `<div class="element"></div>`
+        );
+      }
+    </script>
+    <script src="script.js"></script>
+    <script>
+      animationOnScroll({
+        elementsSelector: ".element",
+        animationClassName: "anim1",
+        startPointInfo: true,
+      });
+
+      animationOnScroll({
+        elementsSelector: ".element",
+        animationClassName: "anim2",
+        animationViewPortStartPoint: 50,
+        animOnload: false,
+        startPointInfo: true,
+      });
+    </script>
+  </body>
+</html>
